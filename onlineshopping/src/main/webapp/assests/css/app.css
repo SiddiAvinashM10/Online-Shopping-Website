@@ -1,3 +1,32 @@
+html {
+	width : 100%;
+}
+
 body {
   padding-top: 56px;
+  height : 100%;
+}
+
+.wrapper{
+	 min-height: 100%;
+	 positon : relative;
+}
+
+.content{
+	padding-bottom:60px;
+}
+footer{
+	margin:0;
+}
+footer1 {
+ margin: 0;
+ position: absolute;
+ bottom: 0;
+ heigth: 30px;
+ width: 100%;
+}
+.footer{
+	position:absolute;
+	bottom : 0;
+	height: 60px;
 }
