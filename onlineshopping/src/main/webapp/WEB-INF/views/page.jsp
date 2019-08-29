@@ -73,7 +73,7 @@
 		<script src="${js}/jquery.js"></script>
 		<script src="${js}/bootstrap.bundle.min.js"></script>
 		<script src="${js}/jquery.dataTables.js"></script>
-		<script src="${js}/activeMenu.js"></script>
+		<script src="${js}/app.js"></script>
 	</div>
 
 </body>
