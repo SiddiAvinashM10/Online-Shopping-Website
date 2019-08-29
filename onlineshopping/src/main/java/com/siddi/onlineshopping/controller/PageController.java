@@ -49,26 +49,31 @@ public class PageController {
 	{
 		//System.out.println("in all products");
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "All Products");
+		mv.addObject("title", "Products");
 		//passing category list
 		mv.addObject("categories", categoryDAO.list());
 		mv.addObject("userClickProducts", true);
 		return mv;
 	}
 	
-	@RequestMapping(value = "/listProducts/{id}")
+	@RequestMapping(value = "/show/category/{id}/products")
 	public ModelAndView showIdProducts(@PathVariable("id") int id)
 	{
-		Category category = categoryDAO.get(id);
-		
 		ModelAndView mv = new ModelAndView("page");
 		
+		Category category = null;
+		category = categoryDAO.get(id);
+		
+
 		mv.addObject("title", category.getName());
 		//passing category list
 		mv.addObject("categories", categoryDAO.list());
 		//passing specific category
 		mv.addObject("category", category);
 		mv.addObject("userClickProduct", true);
+		//System.out.println("Yo this is one" + category);
+		//System.out.println("Yo this is two" + mv);
+		
 		return mv;
 	}
 }

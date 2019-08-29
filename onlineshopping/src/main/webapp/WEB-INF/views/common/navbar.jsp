@@ -13,8 +13,7 @@
 				</a></li> -->
 				<li id = "home" class="nav-item"><a class="nav-link" href="${contextRoot}/home">Home</a></li>
 				<li id = "about" class="nav-item"><a class="nav-link" href="${contextRoot}/about">About</a></li>
-				<li id = "products" class="nav-item"><a class="nav-link" href="${contextRoot}/listProducts">View Products</a>
-				</li>
+				<li id = "listProducts" class="nav-item"><a class="nav-link" href="${contextRoot}/listProducts">View Products</a></li>
 				<li id = "contact" class="nav-item"><a class="nav-link" href="${contextRoot}/contact">Contact</a></li>
 			</ul>
 		</div>
